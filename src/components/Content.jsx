@@ -25,16 +25,16 @@ const Content = () => {
           data.map((val, index) => (
             <div
               key={index}
-              className="py-2 mx-2 cursor-pointer rounded px-2  my-2 border-2 flex flex-row hover:bg-gray-200"
+              className="py-2 mx-2  cursor-pointer rounded px-2  my-2 border-2 flex flex-col md:flex-row hover:bg-gray-200"
             >
               <div className="flex items-center">
                 <img
-                  className="w-20 h-20 p-1 rounded-full ring-2 ring-gray-300 dark:ring-gray-500"
+                  className="w-24 h-24 mx-auto  p-1 rounded-full ring-2 ring-gray-300 dark:ring-gray-500"
                   src={val.avatar}
                   alt=""
                 />
               </div>
-              <div className="flex flex-col justify-center p-2 text-xl">
+              <div className="flex  flex-col justify-center p-2 text-xl">
                 <h1 className="font-bold">{val.profile.username}</h1>
                 <h1 className="text-gray-500">{val.jobTitle}</h1>
                 <h2>{val.Bio}</h2>
